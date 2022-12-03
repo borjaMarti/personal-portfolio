@@ -1,0 +1,12 @@
+{
+  "short_name": "borjaMartí",
+  "name": "borjaMartí",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#1b1b1b;",
+  "theme_color": "#1b1b1b;"
+}
