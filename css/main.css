@@ -19,8 +19,6 @@ html {
 
 a {
   text-decoration: none;
-  border-bottom: none;
-  color: #777777;
 }
 
 li {
@@ -107,10 +105,6 @@ body {
   padding: 1.6rem;
 }
 
-::selection {
-  background-color: #CDB380;
-}
-
 @media screen and (min-width: 640px) {
   body { 
     padding: 3.2rem;
@@ -122,6 +116,32 @@ body {
   body { 
     font-size: 2.4rem;
   }
+}
+
+/* Selection */
+
+::selection {
+  background-color: #CDB380;
+}
+
+/* Links */
+
+.link {
+  color: #777777;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.altLink {
+  color: #069592;
+  transition: color 0.3s ease-in-out;
+}
+
+.altLink:hover {
+  color: #036564;
 }
 
 /* ---------------- */
@@ -178,70 +198,22 @@ nav {
   margin: 1rem 0 2rem 0;
 }
 
-.moreOnSiteItem {
-  transition: color 0.3s ease-in-out;
-}
-
-.moreOnSiteItem:hover {
-  color: #fff;
-}
-
 /* ---------------- */
-/*   MAIN SECTION   */
+/*  MAIN SECTION  */
 /* ---------------- */
 
-main {
+.main {
   margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 1024px) {
-  main { 
+  .main { 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 16rem;
     gap: 10rem;
-  }
-}
-
-/* Banner */
-
-.about {
-  order: -1;
-  flex-grow: 1.5;
-  flex-basis: 0;
-  max-width: 52rem;
-}
-
-.about a {
-  color: #069592;
-  transition: color 0.3s ease-in-out;
-}
-
-.about a:hover {
-  color: #036564;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-.myName {
-  font-weight: bold;
-}
-
-@media screen and (min-width: 640px) {
-  h1 { 
-    font-size: 3.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  h1 { 
-    font-size: 4.8rem;
   }
 }
 
@@ -269,12 +241,7 @@ h1 {
 }
 
 .icon {
-  transition: color 0.3s ease-in-out;
   font-size: 3rem;
-}
-
-.icon:hover {
-  color: #fff;
 }
 
 @media screen and (min-width: 640px) {
@@ -297,6 +264,38 @@ h1 {
   }
 }
 
+/* Info */
+
+.info {
+  order: -1;
+  flex-grow: 1.5;
+  flex-basis: 0;
+  max-width: 52rem;
+}
+
+.hey {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.myName {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 640px) {
+  .hey { 
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hey { 
+    font-size: 4.8rem;
+  }
+}
+
+
 /* ---------------- */
 /* PROJECTS SECTION */
 /* ---------------- */
@@ -305,20 +304,20 @@ h1 {
   margin-bottom: 4rem;
 }
 
-h2 {
+.secondaryHeader {
   font-size: 2.4rem;
   padding-bottom: 1.6rem;
   border-bottom: 1px solid #4e4e4e;
 }
 
 @media screen and (min-width: 640px) {
-  h2 { 
+  .secondaryHeader { 
     font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  h2 { 
+  .secondaryHeader { 
     font-size: 4rem;
   }
 }
