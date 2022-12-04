@@ -107,6 +107,10 @@ body {
   padding: 1.6rem;
 }
 
+::selection {
+  background-color: #CDB380;
+}
+
 @media screen and (min-width: 640px) {
   body { 
     padding: 3.2rem;
@@ -142,17 +146,15 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
+  header { 
+    margin-bottom: 10rem;
+  }
+
   nav { 
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1.6rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  header { 
-    margin-bottom: 16rem;
   }
 }
 
@@ -199,7 +201,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 16rem;
-    gap: 15rem;
+    gap: 10rem;
   }
 }
 
@@ -209,6 +211,7 @@ main {
   order: -1;
   flex-grow: 1.5;
   flex-basis: 0;
+  max-width: 52rem;
 }
 
 .about a {
