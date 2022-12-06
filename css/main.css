@@ -153,7 +153,7 @@ header {
   margin-bottom: 4rem;
 }
 
-nav {
+.topNav {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #4e4e4e;
@@ -171,7 +171,7 @@ nav {
     margin-bottom: 10rem;
   }
 
-  nav { 
+  .topNav { 
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1.6rem;
@@ -410,16 +410,26 @@ nav {
 /*  FOOTER SECTION  */
 /* ---------------- */
 
+.mainFooter {
+  padding-top: 2.2rem;
+  border-top: 1px solid #4e4e4e;
+  font-size: 1.6rem;
+}
+
 .logoB {
   text-align: center;
-  padding-top: 3.2rem;
-  border-top: 1px solid #4e4e4e;
+  margin-top: 3rem;
 }
 
 .logoB img {
   height: 5rem;
 }
 
+@media screen and (min-width: 640px) {
+  .mainFooter { 
+    font-size: 1.8rem;
+  }
+}
 
 /* ==========================================================================
    Helper classes
