@@ -212,7 +212,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16rem;
+    margin-bottom: 13rem;
     gap: 10rem;
   }
 }
@@ -308,17 +308,101 @@ nav {
   font-size: 2.4rem;
   padding-bottom: 1.6rem;
   border-bottom: 1px solid #4e4e4e;
+  margin-bottom: 4rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.project {
+  height: 20rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  border: 1px solid #036564;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #212121;
+  box-shadow: rgba(0, 0, 0, 0.2) 0.5rem 0.5rem 1rem;
+}
+
+.projectTitle {
+  margin: 0;
+}
+
+.techStack, .projectLinks {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.techStack {
+  font-size: 1.3rem;
+  font-variant: small-caps;
+}
+
+.projectLinks {
+  font-size: 1.9rem;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 640px) {
   .secondaryHeader { 
     font-size: 3rem;
+    margin-bottom: 8rem;
+  }
+
+  .portfolio {
+    margin-bottom: 8rem;
+  }
+
+  .projects {
+    gap: 3.75rem;
+  }
+
+  .project {
+    font-size: 1.8rem;
+  }
+
+  .techStack {
+    font-size: 1.5rem;
+  }
+
+  .projectLinks {
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .secondaryHeader { 
     font-size: 4rem;
+  }
+  
+  .projects {
+    gap: 8rem;
+  }
+
+  .project {
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .secondaryHeader { 
+    margin-bottom: 10rem;
+  }
+
+  .portfolio {
+    margin-bottom: 10rem;
   }
 }
 
@@ -328,7 +412,7 @@ nav {
 
 .logoB {
   text-align: center;
-  padding-top: 1.6rem;
+  padding-top: 3.2rem;
   border-top: 1px solid #4e4e4e;
 }
 
