@@ -122,6 +122,24 @@ body {
 
 ::selection {
   background-color: #CDB380;
+  color: #222;
+}
+
+.link:hover::selection {
+  color: #fff;
+}
+
+.altLink::selection {
+  color: #069592;
+}
+
+.altLink:hover::selection {
+
+  color: #036564;
+}
+
+img::selection {
+  background-color: transparent;
 }
 
 /* Links */
