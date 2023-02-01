@@ -3,7 +3,7 @@ This is my personal landing page. It contains a bit of info about me, my portfol
 
 **Link to project:** https://borjamarti.netlify.app/
 
-<img src="gifDeLaWeb" alt="Gif showing the web design and style.">
+<img src="img/showcase.gif" alt="Gif showing the web design and style.">
 
 ## How It's Made:
 
