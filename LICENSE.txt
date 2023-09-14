@@ -44,7 +44,7 @@ SOFTWARE.
 
 ////////////////////////////////////////////////////////////////////////////////
 
-Tabler Icons (GitHub, LinkedIn, and Mail svgs):
+Tabler Icons (GitHub, LinkedIn, mail, and external link svgs):
 
 MIT License
 
