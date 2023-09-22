@@ -16,6 +16,8 @@ html {
   font-size: 62.5%;
   line-height: 1.4;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #8e8e8e;
 }
 
 a {
@@ -97,19 +99,12 @@ textarea {
    ========================================================================== */
 
 body {
-  background-color: #1b1b1b;
-  color: #fff;
-  font-family: "IBM Plex Sans", -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 1.6rem;
 }
 
 @media screen and (min-width: 640px) {
   body {
-    padding: 3.2rem;
     font-size: 2rem;
   }
 }
@@ -124,7 +119,6 @@ body {
 
 ::selection {
   background-color: #cdb380;
-  color: #222;
 }
 
 .link:hover::selection {
@@ -146,12 +140,12 @@ img::selection {
 /* Links */
 
 .link {
-  color: #777777;
+  color: #707070;
   transition: color 0.3s ease-in-out;
 }
 
 .link:hover {
-  color: #fff;
+  color: #069592;
 }
 
 .alt-link {
@@ -164,36 +158,59 @@ img::selection {
 }
 
 /* ---------------- */
+/*  HERO            */
+/* ---------------- */
+
+.hero {
+  margin-bottom: 6rem;
+  background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+    margin-bottom: 0;
+  }
+}
+
+/* ---------------- */
 /*  HEADER SECTION  */
 /* ---------------- */
 
 header {
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
   font-size: 1.6rem;
   margin-bottom: 4rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .top-nav {
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #4e4e4e;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 @media screen and (min-width: 640px) {
   header {
     font-size: 1.8rem;
-    margin-bottom: 8rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-    margin-bottom: 10rem;
-  }
-
   .top-nav {
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 1.6rem;
+    padding: 1.5rem 8rem;
   }
 }
 
@@ -214,7 +231,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin: 1rem 0 2rem 0;
+  margin: 0;
 }
 
 /* ---------------- */
@@ -222,7 +239,13 @@ header {
 /* ---------------- */
 
 .main {
-  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -231,8 +254,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 13rem;
+    max-width: 100rem;
     gap: 10rem;
+    margin: 15vh auto;
   }
 }
 
@@ -326,6 +350,7 @@ header {
   padding-bottom: 1.6rem;
   border-bottom: 1px solid #4e4e4e;
   margin-bottom: 4rem;
+  margin-top: 0;
 }
 
 .projects {
